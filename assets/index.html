@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html style="background: transparent !important;">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
+	<title>SWEDISHFAMILY.NET</title>
+</head>
+
+<body uk-scrollspy="cls: uk-animation-fade">
+	<div class="container" id="main-login">
+		<div class="main-panel">
+			<div class="uk-position-top-right topbar-padding noselect" style="-webkit-app-region: no-drag;">
+				<span class="minimize-btn" href="#" id="minimize-btn"></span>
+				<span class="close-btn" href="#" id="close-btn"></span>
+			</div>
+
+			<div class="uk-width-medium uk-padding-small uk-position-center" style="-webkit-app-region: no-drag;"
+				uk-scrollspy="cls: uk-animation-fade">
+				<div class="uk-text-center uk-margin">
+					<span class="uk-text-large uk-text-bold uk-text-primary noselect">LOGGA IN</span>
+				</div>
+
+				<fieldset class="uk-fieldset">
+					<div class="uk-margin-small" id="user-div">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+							<input class="uk-input uk-border-pill noselect" required placeholder="Användarnamn" type="text" id="username-input">
+						</div>
+					</div>
+					<div class="uk-margin-small" id="pass-div">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+							<input class="uk-input uk-border-pill noselect" required placeholder="Lösenord" type="password" id="password-input">
+						</div>
+					</div>
+					<div class="uk-margin-small">
+						<label class="noselect"><input class="uk-checkbox" type="checkbox" id="remember-checkbox"> Kom ihåg mig</label>
+					</div>
+					<div class="uk-margin-bottom">
+						<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1" id="login-btn">LOGGA IN</button>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="back-panel">
+			<div class="uk-position-center-right center-logo noselect" uk-scrollspy="cls: uk-animation-fade">
+				<div class="uk-margin-medium-top" style="-webkit-app-region: no-drag;" >
+					<img class="logo-img" data-src="img/logo.png" id="logo-btn" width="150" height="150" uk-img>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="dashboard" style="display: none;">
+		<div class="main-dashboard-panel">
+			<nav class="uk-navbar-container uk-margin" uk-navbar style="border-radius: 10px 10px 0px 0px;">
+				<div class="uk-navbar-left">
+					<a class="uk-navbar-item uk-logo noselect" href="#" style="-webkit-app-region: no-drag;">
+						<img class="logo-img" data-src="img/logo.png" id="logo-btn" width="32" height="32" uk-img>
+					</a>
+				</div>
+		
+				<ul class="uk-navbar-nav" style="-webkit-app-region: no-drag;" uk-tab uk-switcher="connect: .ui-dummy-class; animation: uk-animation-fade">
+					<li class="uk-active">
+						<a>
+							<span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span>
+							HEM
+						</a>
+					</li>
+		
+					<li>
+						<a>
+							<span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
+							KARAKTÄRER
+						</a>
+					</li>
+		
+					<li>
+						<a id="sign-out">
+							<span class="uk-icon uk-margin-small-right" uk-icon="icon: sign-out"></span>
+							LOGGA UT
+						</a>
+					</li>
+		
+					<li>
+						<a id="dash-close-btn">
+							<span class="uk-icon uk-margin-small-right" uk-icon="icon: close"></span>
+							AVSLUTA
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<ul class="uk-switcher ui-dummy-class">
+				<li class="fade-in">
+					<div class="uk-padding">
+						<article class="uk-comment">
+							<header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+								<div class="uk-width-auto">
+									<img class="uk-border-circle" src="https://swedishfamily.net/data/avatars/o/0/1.jpg?1532685382" width="90" height="90" alt="">
+								</div>
+							</header>
+						</article>
+					</div>
+				</li>
+
+				<li class="fade-in">
+					<div class="uk-padding">
+						
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit-icons.min.js"></script>
+	<script src="./js/renderer.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
